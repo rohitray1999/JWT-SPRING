@@ -1,0 +1,8 @@
+server:
+  port: 8080
+jwt:
+  # Base64 encoded, minimum 32 bytes. Production me env variable se do: JWT_SECRET
+  secret: ${JWT_SECRET:ZGVtby1zZWNyZXQta2V5LW11c3QtYmUtYXQtbGVhc3QtMzItYnl0ZXMtbG9uZy1jaGFuZ2UtaXQ=}
+  issuer: jwt-demo
+  access-expiration-ms: 900000        # 15 min
+  refresh-expiration-ms: 604800000    # 7 days
